@@ -12,7 +12,7 @@ class AllProducts(models.Model):
     retail_price = models.CharField(max_length=1500)
     discounted_price = models.CharField(max_length=500)
     image = models.CharField(max_length=3000)
-    is_FK_Advantage_product = models.CharField(max_length=1500)
+    is_fk_advantage_product = models.CharField(max_length=1500)
     description = models.TextField()
     product_rating = models.CharField(max_length=500)
     overall_rating = models.CharField(max_length=500)
