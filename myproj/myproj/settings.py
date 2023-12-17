@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&m#7u_!^n56%pe*1xs^q@haakodbz^=g8b-&pkyu!=7!%81b@b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,12 +80,12 @@ WSGI_APPLICATION = 'myproj.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'flipkart_db',
-        'USER': 'root',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'test_db',
+        'USER': 'coachpro',
         'PASSWORD':'Sridevi@95',
-        'HOST':'127.0.0.1',
-        'PORT':3306
+        'HOST':'db',
+        'PORT':5432
     }
 }
 
