@@ -37,3 +37,4 @@ config.json
 
 backend/media/
 backend/static/
+*env
