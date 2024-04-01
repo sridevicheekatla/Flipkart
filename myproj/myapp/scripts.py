@@ -15,6 +15,7 @@ def csv_dump(csv_file_path):
         df_col.append('active')
         df_val = df_data.values.tolist()
 
+        # configuration
         config = {
             "host": "db",
             "database": "test_db",
