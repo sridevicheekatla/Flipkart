@@ -2,7 +2,11 @@ import pandas as pd
 import psycopg2
 import os
 
+
 def csv_dump(csv_file_path):
+    """
+    read csv data
+    """
     try:
         df_data = pd.read_csv(csv_file_path, encoding='latin-1', on_bad_lines='skip')
         df_data.fillna(0, inplace=True)
